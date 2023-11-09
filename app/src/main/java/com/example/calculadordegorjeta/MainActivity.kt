@@ -150,13 +150,13 @@ fun AppCalculadorDeGorjeta(){
             }
         }
     ) {
-            innerPadding ->
+            espacoDasBarras ->
         Column(
             verticalArrangement = Arrangement.Center,
             horizontalAlignment = Alignment.CenterHorizontally,
             modifier = Modifier
                 .fillMaxSize()
-                .padding(innerPadding)
+                .padding(espacoDasBarras)
         ) {
             CampoDeTexto(
                 value = totalConta,
