@@ -92,7 +92,9 @@ fun AppCalculadorDeGorjeta(){
                         textAlign = TextAlign.Center
                     )
                 },navigationIcon = {
-                    IconButton(onClick = { /*  coloque a ação de clique */ }) {
+                    IconButton(
+                        onClick = { /*  coloque a ação de clique */ }
+                    ) {
                         Icon(
                             imageVector = Icons.Filled.ArrowBack,
                             contentDescription = null
@@ -100,7 +102,9 @@ fun AppCalculadorDeGorjeta(){
                     }
                 },
                 actions = {
-                    IconButton(onClick = { /* coloque a ação de clique */ }) {
+                    IconButton(
+                        onClick = { /* coloque a ação de clique */ }
+                    ) {
                         Icon(
                             imageVector = Icons.Filled.Menu,
                             contentDescription = null
@@ -113,15 +117,19 @@ fun AppCalculadorDeGorjeta(){
             BottomAppBar(
                 containerColor = Color.LightGray,
                 actions = {
-                    IconButton(onClick = { /* coloque a ação de clique */ }) {
+                    IconButton(
+                        onClick = { /* coloque a ação de clique */ }
+                    ) {
                         Icon(
-                            Icons.Filled.Check,
+                            imageVector = Icons.Filled.Check,
                             contentDescription = null
                         )
                     }
-                    IconButton(onClick = { /* coloque a ação de clique */ }) {
+                    IconButton(
+                        onClick = { /* coloque a ação de clique */ }
+                    ) {
                         Icon(
-                            Icons.Filled.Edit,
+                            imageVector = Icons.Filled.Edit,
                             contentDescription = null,
                         )
                     }
@@ -134,7 +142,10 @@ fun AppCalculadorDeGorjeta(){
                     onClick = { /*coloque a ação de clique*/ },
                     containerColor = Color.LightGray,
                 ) {
-                    Icon(Icons.Default.Add, contentDescription = null)
+                    Icon(
+                        imageVector = Icons.Default.Add,
+                        contentDescription = null
+                    )
                 }
             }
         }
@@ -193,7 +204,7 @@ fun calcularGorjeta(
     }
     return NumberFormat.getCurrencyInstance().format(gorjeta)
 }
-    @OptIn(ExperimentalMaterial3Api::class)
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun CampoDeTexto(
     value:String,
